@@ -1,5 +1,8 @@
 # TryParse.h
 A library that provides TryParsing methods similiar to C# into C++
+
+!!!LEGGI LA WIKI PER LE NOVITA IN ARRIVO!!!
+
 # Methods
     TryParseInt    - Converts a string into an int
     TryParseFloat  - Converts a string into a float
