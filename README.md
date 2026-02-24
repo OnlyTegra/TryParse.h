@@ -1,29 +1,36 @@
 # TryParse.h
-A library that provides TryParsing methods similiar to C# into C++
 
-# !!!LEGGI LA WIKI PER LE NOVITA IN ARRIVO!!!
+Una libreria che fornisce metodi **TryParse** simili a quelli di C# in C++.
 
-# Methods
-    TryParseInt    - Converts a string into an int
-    TryParseFloat  - Converts a string into a float
-    TryParseDouble - Converts a string into a double
-    TryParseBool   - Converts a string into a bool
+## !!! LEGGI LA WIKI PER LE NOVITÀ IN ARRIVO !!!
 
-# How to Use 
-The function returns a bool indicating whether the conversion was successful. It takes the input string and an output variable as parameters:
+## Metodi
 
-    bool TryParse(input string, output)
+- **TryParseInt**    - Converte una stringa in un `int`
+- **TryParseFloat**  - Converte una stringa in un `float`
+- **TryParseDouble** - Converte una stringa in un `double`
+- **TryParseBool**   - Converte una stringa in un `bool`
 
-Include the two files in the root of your project and add   
-    
-    #include "TryParse.h"
+## Come Usare
 
-On the top of your cpp files
+La funzione restituisce un valore `bool` che indica se la conversione è avvenuta con successo.  
+Prende come parametri la stringa di input e una variabile di output:
 
-then compile the source using the following command
-    
-    g++ main.cpp -L. -ltryparse -o output
+```cpp
+bool TryParse(input_string, output_variable);
+```
 
-# License
-    This library is free to use, but please consider 
-    keeping my username in the credits!
+### Installazione
+
+1. Includi i due file nella cartella principale del tuo progetto.
+2. Aggiungi nel file `.cpp`:
+
+```cpp
+#include "TryParse.h"
+```
+
+3. Compila il progetto con:
+
+```bash
+g++ main.cpp -L. -ltryparse -o output
+```
